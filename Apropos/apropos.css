@@ -30,13 +30,25 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D0D0D0;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0000FF;
+}
+
 .nav {
     position: sticky;
     z-index: 2;
     top: 0;
     left: 0;
     justify-content: space-between;
-    /*width: 90%; va avec le header*/
     width: 100%;
     border-radius: 0 0 18px 18px;
     padding: 15px 200px;
@@ -86,10 +98,10 @@ a {
 
 /*----------------------------------------------
     START ANIMATION HOVER
-        nav a
+        nav 
 ----------------------------------------------*/
 .nav .nav-links a:hover {
-    color: #0000FF;
+    transform: scale(1.1);
 }
 
 .nav .nav-links a {
@@ -115,7 +127,7 @@ a {
 }
 /*----------------------------------------------
     END ANIMATION HOVER
-        nav a
+        nav 
 ----------------------------------------------*/
 
 
@@ -164,7 +176,7 @@ a {
         row-gap: 25px;
         flex-direction: column;
         background-color: #000;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.4);
         transition: all 0.4s ease;
     }
     .nav .nav-links a {
@@ -176,7 +188,7 @@ a {
     .nav.openNav .nav-links span {
         width: 41%;
         height: 0.1px;
-        background-color: #D0D0D0
+        background-color: #D0D0D0;
     }
     .nav .navOpenBtn {
         color: #fff;
@@ -196,8 +208,12 @@ a {
         color: #EE0808;
     }    
 }
+/*----------------------------------------------
+    END RESPONSIVE
+        nav 
+----------------------------------------------*/
 
-.firstContainer {
+/*.firstContainer {
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -205,6 +221,12 @@ a {
     margin-top: 50px;
     margin-left: 50px;
     margin-bottom: 40px;
+}*/
+.firstContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 41px;
 }
 
 .titleOneContainer {
@@ -217,17 +239,25 @@ a {
 
 .textContainer {
     color: #fff;
-    margin-top: 65px;
+    margin-top: 25px;
     width: 78%;
+    margin-bottom: 15px;
 }
-
+/*
 .goDownIcon {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 51px;
+}*/
+.goDownIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    padding: 8px;
+    margin-bottom: 90px;
 }
-
 
 
 
@@ -238,13 +268,14 @@ a {
 
 
 .lastContainer {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .titleTwoContainer {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .titleTwoContainer h1 {
@@ -259,57 +290,67 @@ a {
 }
 
 .membersCard {
-    box-shadow: 0 4px 8px rgba(237, 237, 237, 0.1);
+    box-shadow: 0 4px 8px rgba(237, 237, 237, 0.4);
     padding: 1rem;
+    border: 1px solid transparent;
     border-radius: 8px;
     flex: 1;
-    max-width: 430px; /* Largeur augmentée ici */
-    width: 430px; /* Largeur fixe, mais cela rendra les cartes moins flexibles. Vous pouvez également essayer d'utiliser des pourcentages ou d'autres unités relatives */
-    height: 400px; /* Hauteur fixe ajoutée */
+    min-width: 184px;
+    max-width: 290px;
+    width: 250px;
+    max-height: 360px;
+    height: 360px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrer les éléments horizontalement */
-    justify-content: space-between; /* Distribue l'espace entre les éléments pour bien les espacer */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.membersCard:hover {
+    border: 1px solid #D0D0D0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
 }
 
 .membersCard img {
     display: block;
     margin: 0 auto;
-    max-width: 80%; /* légèrement réduit pour avoir une marge autour de l'image */
-    margin-bottom: 1rem;
+    max-width: 94%;
     border-radius: 50%;
 }
 
 .membersCard h3 {
-    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #fff;
+    font-size: medium;
+}
+
+.membersCard h4 {
+    margin-top: 15px;
     margin-bottom: 1rem;
+    color: #D0D0D0;
+}
+
+.membersCard h5:hover {
+    color: #fff;
+}
+
+.membersCard p {
+    margin-top: -15px;
+    margin-bottom: 16px;
+    color: #D0D0D0;
+    font-size: smaller;
 }
 
 @media (max-width: 768px) {
     .membersCardContainer {
         flex-direction: column;
     }
-
     .membersCard {
         max-width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
     display: flex;
