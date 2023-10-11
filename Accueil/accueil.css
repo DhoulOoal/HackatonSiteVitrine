@@ -13,9 +13,6 @@
 
 body {
     background: #000;
-    /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1351%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1352%26quot%3b)'%3e%3c/rect%3e%3cpath d='M337 52L336 383' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M203 77L202 -175' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M673 90L672 -67' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1158 279L1157 2' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M856 146L855 553' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1349 331L1348 659' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M784 408L783 221' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M873 474L872 244' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1372 545L1371 173' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1114 275L1113 40' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M572 302L571 -70' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1357 4L1356 -365' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1228 508L1227 916' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M831 137L830 464' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M385 152L384 -181' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1305 69L1304 375' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M244 476L243 178' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M688 482L687 249' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1049 320L1048 569' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M357 552L356 855' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1275 335L1274 -80' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M714 91L713 -215' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M273 467L272 641' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M976 19L975 -338' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M803 16L802 239' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1146 12L1145 -282' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M439 145L438 504' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1244 526L1243 366' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M115 292L114 437' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M7 113L6 -112' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1062 50L1061 363' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M364 40L363 323' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M321 43L320 -282' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M240 340L239 652' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M4 97L3 289' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1353%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M693 162L692 -155' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1354%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1351'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='100%25' x2='50%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1352'%3e%3cstop stop-color='rgba(255%2c 217%2c 238%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(206%2c 104%2c 146%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1353'%3e%3cstop stop-color='rgba(112%2c 22%2c 45%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(112%2c 22%2c 45%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1354'%3e%3cstop stop-color='rgba(112%2c 22%2c 45%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(112%2c 22%2c 45%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-size: cover;*/
 }
 
 @keyframes circle-in-center {
@@ -34,10 +31,18 @@ html {
     scroll-behavior: smooth;
 }
 
-/*header {
-    display: flex;
-    justify-content: center;
-}*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D0D0D0;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0000FF;
+}
 
 .nav {
     position: sticky;
@@ -45,7 +50,6 @@ html {
     top: 0;
     left: 0;
     justify-content: space-between;
-    /*width: 90%; va avec le header*/
     width: 100%;
     border-radius: 0 0 18px 18px;
     padding: 15px 200px;
@@ -98,7 +102,7 @@ a {
         nav a
 ----------------------------------------------*/
 .nav .nav-links a:hover {
-    color: #0000FF;
+    transform: scale(1.1);
 }
 
 .nav .nav-links a {
@@ -210,42 +214,6 @@ a {
         nav
 ----------------------------------------------*/
 
-/* START ORIGINAL
-.catchyTitleANDcatchyImgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 8em;
-}
-
-.catchyImg {
-    /*overflow: hidden;*/
-    /*START AGAIN---------------border: 1px dashed #636161;
-    z-index: -1;
-}
-
-.catchyImg img {
-    width: 90%;
-    height: 100%;
-    /*mix-blend-mode: darken;*/
-    /* START AGAIN AGAIN----------------
-    filter: drop-shadow(3px 6px 9px #636161);
-    transform: translateX(0px);
-    animation: float 6s ease-out infinite;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-60px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-END ORIGINAL*/
 
 .catchyTitleANDcatchyImgContainer {
     position: relative;
@@ -277,19 +245,7 @@ END ORIGINAL*/
     color: #FFD9EE;
     font-size: 2.5em;
 }
-/*ORIGINAL IMG BEHAVIOR
-.catchyImg {
-    width: 82%;
-}
-*//*
-.catchyImg img {
-    /*mix-blend-mode: darken;*//*
-    z-index: -1;
-    filter: drop-shadow(3px 6px 9px #636161);
-    transform: translateX(0px);
-    animation: float 6s ease-out infinite;
-}
-END ORIGINAL IMG BEHAVIOR*/
+
 .catchyImg {
     position: relative;
     transform: translate(-18%, -5%);

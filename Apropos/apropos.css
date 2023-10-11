@@ -235,6 +235,7 @@ a {
 
 .titleOneContainer h1 {
     color: #29F717;
+    font-style: italic;
 }
 
 .textContainer {
@@ -243,13 +244,51 @@ a {
     width: 78%;
     margin-bottom: 15px;
 }
-/*
-.goDownIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 51px;
-}*/
+
+.keyWords {
+    color: #29F717;
+}
+/*----------------------------------------------
+    START RESPONSIVE
+        firstContainer
+----------------------------------------------*/
+@media (max-width: 1410px) {
+    .firstContainer {
+        margin: 0 auto;
+        margin-top: 41px;
+        margin-left: 41px;
+    }
+    .textContainer {
+        font-size: 94%;
+    }   
+}
+
+@media (max-width: 1255px) {
+    .textContainer {
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .textContainer {
+        width: 90%;
+    }
+    .goDownIcon {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .textContainer {
+        font-size: 86%;
+    }
+}
+/*----------------------------------------------
+    END RESPONSIVE
+        firstContainer
+----------------------------------------------*/
+
 .goDownIcon {
     display: flex;
     justify-content: center;
@@ -258,13 +297,6 @@ a {
     padding: 8px;
     margin-bottom: 90px;
 }
-
-
-
-
-
-
-
 
 
 .lastContainer {
@@ -280,6 +312,7 @@ a {
 
 .titleTwoContainer h1 {
     color: #29F717;
+    font-style: italic;
 }
 
 .membersCardContainer {
@@ -304,19 +337,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .membersCard:hover {
     border: 1px solid #D0D0D0;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
     transform: scale(1.05);
+    transition: 0.41s ease-in-out;
 }
 
 .membersCard img {
     display: block;
     margin: 0 auto;
-    max-width: 94%;
+    max-width: 80%;
     border-radius: 50%;
 }
 
@@ -342,15 +376,70 @@ a {
     color: #D0D0D0;
     font-size: smaller;
 }
+/*----------------------------------------------
+    START RESPONSIVE
+        membersCard
+----------------------------------------------*/
+@media (max-width: 1024px) {
+    .membersCard {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 768px) {
     .membersCardContainer {
-        flex-direction: column;
+        flex-direction: row;
     }
     .membersCard {
-        max-width: 100%;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .membersCard img {
+        scale: 0.9;
+    }
+    .membersCard h3, .membersCard h4, .membersCard p {
+        font-size: 90%;
     }
 }
+
+@media (max-width: 500px){
+    .membersCardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .titleTwoContainer {
+        margin-left: 41px;
+    }
+}
+
+@media (max-width: 480px) {
+    .membersCard {
+        width: 100%;
+    }
+    .titleTwoContainer h1, .membersCard h3, .membersCard h4, .membersCard p {
+        font-size: 80%;
+    }
+}
+/*----------------------------------------------
+    END RESPONSIVE
+        membersCard 
+----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     display: flex;
