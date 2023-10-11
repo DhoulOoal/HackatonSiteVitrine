@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+    font-family: 'Roboto';
+    src: url(/Assets/Roboto-Regular.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -63,6 +66,7 @@ html {
 
 a {
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 .nav .nav-links .mainLink {
@@ -213,15 +217,7 @@ a {
         nav 
 ----------------------------------------------*/
 
-/*.firstContainer {
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 40px;
-}*/
+
 .firstContainer {
     max-width: 1300px;
     margin: 0 auto;
@@ -236,6 +232,7 @@ a {
 .titleOneContainer h1 {
     color: #29F717;
     font-style: italic;
+    font-family: 'Roboto';
 }
 
 .textContainer {
@@ -243,6 +240,7 @@ a {
     margin-top: 25px;
     width: 78%;
     margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
 }
 
 .keyWords {
@@ -298,21 +296,23 @@ a {
     margin-bottom: 90px;
 }
 
-
 .lastContainer {
     max-width: 1300px;
     margin: 0 auto;
+    margin-top: 120px;
     padding: 1rem;
+    margin-bottom: 80px;
 }
 
 .titleTwoContainer {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .titleTwoContainer h1 {
     color: #29F717;
     font-style: italic;
+    font-family: 'Roboto';
 }
 
 .membersCardContainer {
@@ -329,10 +329,10 @@ a {
     border-radius: 8px;
     flex: 1;
     min-width: 184px;
-    max-width: 290px;
+    max-width: 270px;
     width: 250px;
     max-height: 360px;
-    height: 360px;
+    height: 340px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -350,23 +350,29 @@ a {
 .membersCard img {
     display: block;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 98%;
+    width: 98%;
+    height: 150px;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .membersCard h3 {
     margin-top: 10px;
     color: #fff;
     font-size: medium;
+    font-family: 'Roboto';
+    margin-bottom: 10px;
 }
 
 .membersCard h4 {
     margin-top: 15px;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
     color: #D0D0D0;
+    font-family: "Poppins", sans-serif;
 }
 
-.membersCard h5:hover {
+.membersCard h4:hover {
     color: #fff;
 }
 
@@ -375,11 +381,25 @@ a {
     margin-bottom: 16px;
     color: #D0D0D0;
     font-size: smaller;
+    font-family: "Poppins", sans-serif;
 }
 /*----------------------------------------------
     START RESPONSIVE
         membersCard
 ----------------------------------------------*/
+@media (max-width: 1304px) {
+    .membersCard img {
+        width: 83%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .membersCard img {
+        width: 88%;
+        min-width: 82%;
+    }
+}
+
 @media (max-width: 1024px) {
     .membersCard {
         width: 48%;
@@ -396,10 +416,16 @@ a {
         margin-bottom: 10px;
     }
     .membersCard img {
-        scale: 0.9;
+        width: 90%;
     }
     .membersCard h3, .membersCard h4, .membersCard p {
         font-size: 90%;
+    }
+}
+
+@media (max-width: 659px) {
+    .membersCard img {
+        width: 80%;
     }
 }
 
@@ -411,13 +437,13 @@ a {
     .titleTwoContainer {
         margin-left: 41px;
     }
-}
-
-@media (max-width: 480px) {
     .membersCard {
         width: 100%;
     }
-    .titleTwoContainer h1, .membersCard h3, .membersCard h4, .membersCard p {
+    .membersCard img {
+        transform: scaleX(85%);
+    }
+    .membersCard h3, .membersCard h4, .membersCard p {
         font-size: 80%;
     }
 }
@@ -427,29 +453,16 @@ a {
 ----------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     bottom: 4px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
  footer p {
     padding: 18px;
     color: #D0D0D0;
+    font-family: 'Roboto';
  }

@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -64,6 +63,7 @@ html {
 
 a {
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 .nav .nav-links .mainLink {
@@ -299,3 +299,16 @@ a {
     margin-top: 51px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 4px;
+    margin-top: 50px;
+}
+
+ footer p {
+    padding: 18px;
+    color: #D0D0D0;
+    font-family: 'Roboto';
+ }
