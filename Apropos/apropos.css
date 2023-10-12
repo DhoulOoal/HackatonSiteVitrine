@@ -501,8 +501,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 4px;
     margin-top: 90px;
+    margin-bottom: 14px;
 }
 
  footer p {
@@ -510,6 +510,19 @@ footer {
     color: #D0D0D0;
     font-family: 'Roboto';
 }
+/*--------------------------  START REPONSIVE  footer  --------------------------*/
+@media (max-width: 1001px) {
+    footer p {
+        font-size: 92%;
+    }
+}
+
+@media (max-width: 550px) {
+    footer p {
+        font-size: 82%;
+    }
+}
+/*--------------------------  END REPONSIVE  footer  --------------------------*/
 /*----------------------------------------------
     END footer
 ----------------------------------------------*/

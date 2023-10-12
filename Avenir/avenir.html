@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website icon" href="/Assets/musiClash_logo.png" type="png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link rel="stylesheet" href="/Avenir/avenir.css">
+    <script async src="https://basicons.xyz/embed.js"></script>
+    <script src="/Assets/navBar.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <title>Hackaton - Site Vitrine</title>
+</head>
+
+<body transition-style="in:circle:center">
+        <nav class="nav">
+          <i class="uil uil-bars navOpenBtn"></i>
+          <div class="navLogoContainer" href="/Accueil/accueil.html">
+            <a href="/Accueil/accueil.html"><img src="/Assets/musiClash_logo.png" class="navLogo"></a>
+          </div>
+          <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="/Accueil/accueil.html">Accueil</a></li>
+            <span></span>
+            <li><a class="mainLink" href="/Avenir/avenir.html">A venir</a></li>
+            <span></span>
+            <li><a href="/Apropos/apropos.html">A propos</a></li>
+          </ul>
+        </nav>
+
+        <div class="firstContainer">
+            <div class="titleOneContainer">
+                <h1>MusiClash - Version 1<br>{06/10/2023}</h1>
+            </div>
+            <div class="textContainer">
+                <p><ul><li>Musiques jouées aléatoirement</li><br>
+                    <li>Choix de catégories de sons</li><br>
+                    <li>Temps limité (30s)</li><br>
+                    <li>Nombre de musiques jouées limitées</li><br>
+                    <li>Chaque joueur a une barre de vie (100pts de vie)</li><br>
+                    <li>Sélectionner une mauvaise réponse pénalise le joueur de 5s de gel lors desquelles
+                         il ne peut pas en sélectionner une nouvelle</li><br>
+                    <li>Choix de réponses multiple (4)</li><br>
+                    <li>Trouver la réponse enlève de la vie à l'adversaire grâce au système de "tranche" :<br></li>
+                    &emsp;&emsp;&emsp;a.&emsp;30s à 20s = 10pts de vie en moins<br>
+                    &emsp;&emsp;&emsp;b.&emsp;19s à 10s = 7pts de vie en moins<br>
+                    &emsp;&emsp;&emsp;c.&emsp;9s à 0s = 3pts de vie en moins<br>
+                    &emsp;&emsp;&emsp;d.&emsp;0s = aucun point de vie perdu et la musique suivante est jouée<br><br>
+                    <li>La partie prend fin lorsque un joueur n'a plus de vie OU lorsque toutes les musiques sont
+                         jouées (le joueur avec le moins de points de vie a perdu)</li></ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="lastContainer">
+            <div class="titleTwoContainer">
+                <h1>MusiClash - Version 2<br>{23/10/2023}</h1>
+            </div>
+            <div class="textContainer">
+                <p><ul><li>JcJ</li><br>
+                    <li>Réaliser une série de victoires enlève plus de vie au joueur adverse :</li>
+                    &emsp;&emsp;&emsp;a.&emsp;+3pts de vie bonus infligés à partir de 3 bonnes réponses<br>
+                    &emsp;&emsp;&emsp;b.&emsp;+5pts de vie bonus infligés à partir de 5 bonnes réponses<br><br>
+                    <li>Rajout de futures catégories</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="playTheGameContainer">
+            <div class="playTheGame">
+                <a href="#">Jouer</a>
+            </div>
+        </div>
+
+      <footer><p>MusiClash © 2023 - Tout droits réservés</p></footer>
+</body>
+
+</html>

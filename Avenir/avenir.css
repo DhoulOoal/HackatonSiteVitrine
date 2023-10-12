@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+    font-family: 'Roboto';
+    src: url(/Assets/Roboto-Regular.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: #000;
+}
+
+
+
+
+/*----------------------------------------------
+    START LOADING PAGE ANIMATION
+----------------------------------------------*/
+@keyframes circle-in-center {
+    from {
+      clip-path: circle(0%);
+    }
+    to {
+      clip-path: circle(125%);
+    }
+  }
+  [transition-style="in:circle:center"] {
+    animation: 3.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+  }
+/*----------------------------------------------
+    END LOADING PAGE ANIMATION
+----------------------------------------------*/
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*----------------------------------------------
+    START scrollbar
+----------------------------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #D0D0D0;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0000FF;
+}
+/*----------------------------------------------
+    END scrollbar
+----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------
+    START nav
+----------------------------------------------*/
+.nav {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0 0 18px 18px;
+    padding: 15px 200px;
+    background: #000;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.4);
+}
+
+.nav, .nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav .nav-links .mainLink {
+    text-decoration: underline;
+    text-decoration-color: #0000FF;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 12px;
+}
+
+.nav .navLogoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.nav .navLogoContainer .navLogo {
+    max-width: 50px;
+    max-height: 50px;
+    transform: scale(1.9);
+    cursor: pointer;
+}
+
+.nav .nav-links {
+    column-gap: 24px;
+    list-style: none;
+}
+
+.nav .nav-links a {
+    transition: all 0.2s linear;
+    color: #fff;
+    text-decoration: none;
+}
+/*--------------------------  START ANIMATION HOVER  nav a  --------------------------*/
+.nav .nav-links a:hover {
+    transform: scale(1.1);
+}
+
+.nav .nav-links a {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+    
+.nav .nav-links a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: #0000FF;
+    height: 2px;
+    transition: 0.2s ease-out;
+}
+    
+.nav .nav-links a:hover::after {
+    width: 100%;
+}
+/*--------------------------  END ANIMATION HOVER  nav a  --------------------------*/
+.nav.openSearch .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav .navOpenBtn, .nav .navCloseBtn {
+    display: none;
+}
+/*--------------------------  START REPONSIVE  nav  --------------------------*/
+@media screen and (max-width: 1160px) {
+    .nav {
+        padding: 15px 100px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nav {
+        padding: 15px 50px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .nav .navOpenBtn, .nav .navCloseBtn {
+        display: block;
+        font-size: 22px;
+    }
+    .nav {
+        padding: 15px 25px;
+    }
+    .nav .nav-links {
+        position: fixed;
+        justify-content: center;
+        font-size: large;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        row-gap: 25px;
+        flex-direction: column;
+        background-color: #000;
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.4);
+        transition: all 0.4s ease;
+    }
+    .nav .nav-links a {
+        color: #fff;
+    }
+    .nav.openNav .nav-links {
+        left: 0;
+    }
+    .nav.openNav .nav-links span {
+        width: 41%;
+        height: 0.1px;
+        background-color: #D0D0D0;
+    }
+    .nav .navOpenBtn {
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav .navOpenBtn:hover {
+        color: #0000FF;
+    }
+    .nav .navCloseBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav .navCloseBtn:hover {
+        color: #EE0808;
+    }    
+}
+/*--------------------------  END REPONSIVE  nav  --------------------------*/
+/*----------------------------------------------
+    END nav
+----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------
+    START firstContainer
+----------------------------------------------*/
+.firstContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 51px;
+}
+
+.titleOneContainer {
+    display: flex;
+}
+
+.titleOneContainer h1 {
+    color: #29F717;
+    font-style: italic;
+    font-family: 'Roboto';
+}
+
+.textContainer {
+    color: #fff;
+    margin-top: 25px;
+    width: 78%;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 41px;
+}
+/*--------------------------  START REPONSIVE  firstContainer  --------------------------*/
+@media (max-width: 1410px) {
+    .firstContainer {
+        margin: 0 auto;
+        margin-top: 41px;
+        margin-left: 41px;
+    }
+    .textContainer {
+        font-size: 94%;
+    }   
+}
+
+@media (max-width: 1255px) {
+    .titleOneContainer h1 {
+        font-size: 28px;
+    }
+    .textContainer {
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .textContainer {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .textContainer {
+        font-size: 86%;
+    }
+    .titleOneContainer h1 {
+        font-size: 25px;
+    }
+}
+/*--------------------------  END REPONSIVE  firstContainer  --------------------------*/
+/*----------------------------------------------
+    END firstContainer
+----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------
+    START lastContainer
+----------------------------------------------*/
+.lastContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 61px;
+}
+
+.titleTwoContainer {
+    display: flex;
+}
+
+.titleTwoContainer h1 {
+    font-size: 32px;
+    color: #29F717;
+    font-style: italic;
+    font-family: 'Roboto';
+}
+
+.positiveKeyWords {
+    color: #29F717;
+}
+
+.negativeKeyWords {
+    color: #EE0808;
+}
+/*--------------------------  START REPONSIVE  lastContainer  --------------------------*/
+@media (max-width: 1410px) {
+    .lastContainer {
+        margin: 0 auto;
+        margin-top: 41px;
+        margin-left: 41px;
+    }
+    .textContainer {
+        font-size: 94%;
+    }   
+}
+
+@media (max-width: 1255px) {
+    .titleTwoContainer h1 {
+        font-size: 28px;
+    }
+    .textContainer {
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .textContainer {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .textContainer {
+        font-size: 86%;
+        margin-left: 19px;
+    }
+    .titleTwoContainer h1 {
+        font-size: 25px;
+    }
+}
+/*--------------------------  END REPONSIVE  lastContainer  --------------------------*/
+/*----------------------------------------------
+    END lastContainer
+----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------
+    START playTheGame
+----------------------------------------------*/
+.playTheGameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 69px;
+}
+
+.playTheGame a {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: medium;
+    background-color: #0000FF;
+    padding: 12px 25px 12px 25px;
+    border: 1px solid #0000FF;
+    border-radius: 8px 18px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.playTheGame a:hover {
+    transform: translateX(0px);
+    transform: translateY(-0.25em);
+    box-shadow: 3px 3px 5px #D0D0D0;
+}
+/*--------------------------  START REPONSIVE  playTheGame  --------------------------*/
+@media (max-width: 1001px) {
+    .playTheGame a {
+        padding: 9px 22px 9px 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    .playTheGame a {
+        padding: 5px 15px 5px 15px;
+    }
+}
+/*--------------------------  END REPONSIVE  playTheGame  --------------------------*/
+/*----------------------------------------------
+    END playTheGame
+----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------
+    START footer
+----------------------------------------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 14px;
+    position: sticky;
+}
+
+ footer p {
+    font-size: 18px;
+    padding: 18px;
+    color: #D0D0D0;
+    font-family: 'Roboto';
+}
+/*--------------------------  START REPONSIVE  footer  --------------------------*/
+@media (max-width: 1001px) {
+    footer p {
+        font-size: 92%;
+    }
+}
+
+@media (max-width: 550px) {
+    footer p {
+        font-size: 82%;
+    }
+}
+/*--------------------------  END REPONSIVE  footer  --------------------------*/
+/*----------------------------------------------
+    END footer
+----------------------------------------------*/
