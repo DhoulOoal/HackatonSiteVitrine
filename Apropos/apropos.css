@@ -4,6 +4,8 @@
     src: url(/Assets/Roboto-Regular.ttf);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,12 @@ body {
     background: #000;
 }
 
+
+
+
+/*----------------------------------------------
+    START LOADING PAGE ANIMATION
+----------------------------------------------*/
 @keyframes circle-in-center {
     from {
       clip-path: circle(0%);
@@ -28,24 +36,43 @@ body {
   [transition-style="in:circle:center"] {
     animation: 3.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
   }
+/*----------------------------------------------
+    END LOADING PAGE ANIMATION
+----------------------------------------------*/
+
+
+
 
 html {
     scroll-behavior: smooth;
 }
 
+
+
+
+/*----------------------------------------------
+    START scrollbar
+----------------------------------------------*/
 ::-webkit-scrollbar {
     width: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: #D0D0D0;
     border-radius: 8px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: #0000FF;
 }
+/*----------------------------------------------
+    END scrollbar
+----------------------------------------------*/
 
+
+
+
+/*----------------------------------------------
+    START nav
+----------------------------------------------*/
 .nav {
     position: sticky;
     z-index: 2;
@@ -98,12 +125,7 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
-
-/*----------------------------------------------
-    START ANIMATION HOVER
-        nav 
-----------------------------------------------*/
+/*--------------------------  START ANIMATION HOVER  nav a  --------------------------*/
 .nav .nav-links a:hover {
     transform: scale(1.1);
 }
@@ -129,12 +151,7 @@ a {
 .nav .nav-links a:hover::after {
     width: 100%;
 }
-/*----------------------------------------------
-    END ANIMATION HOVER
-        nav 
-----------------------------------------------*/
-
-
+/*--------------------------  END ANIMATION HOVER  nav a  --------------------------*/
 .nav.openSearch .nav-links a {
     opacity: 0;
     pointer-events: none;
@@ -143,12 +160,7 @@ a {
 .nav .navOpenBtn, .nav .navCloseBtn {
     display: none;
 }
-
-
-/*----------------------------------------------
-    START RESPONSIVE
-        nav
-----------------------------------------------*/
+/*--------------------------  START REPONSIVE  nav  --------------------------*/
 @media screen and (max-width: 1160px) {
     .nav {
         padding: 15px 100px;
@@ -212,12 +224,17 @@ a {
         color: #EE0808;
     }    
 }
+/*--------------------------  END REPONSIVE  nav  --------------------------*/
 /*----------------------------------------------
-    END RESPONSIVE
-        nav 
+    END nav
 ----------------------------------------------*/
 
 
+
+
+/*----------------------------------------------
+    START firstContainer
+----------------------------------------------*/
 .firstContainer {
     max-width: 1300px;
     margin: 0 auto;
@@ -251,10 +268,7 @@ a {
 .negativeKeyWords {
     color: #EE0808;
 }
-/*----------------------------------------------
-    START RESPONSIVE
-        firstContainer
-----------------------------------------------*/
+/*--------------------------  START REPONSIVE  firstContainer  --------------------------*/
 @media (max-width: 1410px) {
     .firstContainer {
         margin: 0 auto;
@@ -287,11 +301,17 @@ a {
         font-size: 86%;
     }
 }
+/*--------------------------  END REPONSIVE  firstContainer  --------------------------*/
 /*----------------------------------------------
-    END RESPONSIVE
-        firstContainer
+    END firstContainer
 ----------------------------------------------*/
 
+
+
+
+/*----------------------------------------------
+    START goDownIcon
+----------------------------------------------*/
 .goDownIcon {
     display: flex;
     justify-content: center;
@@ -300,7 +320,16 @@ a {
     padding: 8px;
     margin-bottom: 90px;
 }
+/*----------------------------------------------
+    END goDownIcon
+----------------------------------------------*/
 
+
+
+
+/*----------------------------------------------
+    START lastContainer
+----------------------------------------------*/
 .lastContainer {
     max-width: 1300px;
     margin: 0 auto;
@@ -396,10 +425,7 @@ a {
     font-size: smaller;
     font-family: "Poppins", sans-serif;
 }
-/*----------------------------------------------
-    START RESPONSIVE
-        membersCard
-----------------------------------------------*/
+/*--------------------------  START REPONSIVE  membersCard  --------------------------*/
 @media (max-width: 1304px) {
     .membersCard img {
         width: 83%;
@@ -460,12 +486,17 @@ a {
         font-size: 85%;
     }
 }
+/*--------------------------  END REPONSIVE  membersCard  --------------------------*/
 /*----------------------------------------------
-    END RESPONSIVE
-        membersCard 
+    END lastContainer
 ----------------------------------------------*/
 
 
+
+
+/*----------------------------------------------
+    START footer
+----------------------------------------------*/
 footer {
     display: flex;
     justify-content: center;
@@ -478,4 +509,7 @@ footer {
     padding: 18px;
     color: #D0D0D0;
     font-family: 'Roboto';
- }
+}
+/*----------------------------------------------
+    END footer
+----------------------------------------------*/

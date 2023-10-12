@@ -1,5 +1,10 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+    font-family: 'Roboto';
+    src: url(/Assets/Roboto-Regular.ttf);
+}
+
 
 * {
     margin: 0;
@@ -11,9 +16,18 @@
 }
 
 body {
-    background: #000;
+    background-image: url("/Assets/imgBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
+
+
+
+/*----------------------------------------------
+    START LOADING PAGE ANIMATION
+----------------------------------------------*/
 @keyframes circle-in-center {
     from {
       clip-path: circle(0%);
@@ -25,24 +39,43 @@ body {
   [transition-style="in:circle:center"] {
     animation: 3.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
   }
+/*----------------------------------------------
+    END LOADING PAGE ANIMATION
+----------------------------------------------*/
+
+
+
 
 html {
     scroll-behavior: smooth;
 }
 
+
+
+
+/*----------------------------------------------
+    START scrollbar
+----------------------------------------------*/
 ::-webkit-scrollbar {
     width: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: #D0D0D0;
     border-radius: 8px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: #0000FF;
 }
+/*----------------------------------------------
+    END scrollbar
+----------------------------------------------*/
 
+
+
+
+/*----------------------------------------------
+    START nav
+----------------------------------------------*/
 .nav {
     position: sticky;
     z-index: 2;
@@ -95,12 +128,7 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
-
-/*----------------------------------------------
-    START ANIMATION HOVER
-        nav a
-----------------------------------------------*/
+/*--------------------------  START ANIMATION HOVER  nav a  --------------------------*/
 .nav .nav-links a:hover {
     transform: scale(1.1);
 }
@@ -126,12 +154,7 @@ a {
 .nav .nav-links a:hover::after {
     width: 100%;
 }
-/*----------------------------------------------
-    END ANIMATION HOVER
-        nav a
-----------------------------------------------*/
-
-
+/*--------------------------  END ANIMATION HOVER  nav a  --------------------------*/
 .nav.openSearch .nav-links a {
     opacity: 0;
     pointer-events: none;
@@ -140,12 +163,7 @@ a {
 .nav .navOpenBtn, .nav .navCloseBtn {
     display: none;
 }
-
-
-/*----------------------------------------------
-    START RESPONSIVE
-        nav
-----------------------------------------------*/
+/*--------------------------  START REPONSIVE  nav  --------------------------*/
 @media screen and (max-width: 1160px) {
     .nav {
         padding: 15px 100px;
@@ -209,54 +227,62 @@ a {
         color: #EE0808;
     }    
 }
+/*--------------------------  END REPONSIVE  nav  --------------------------*/
 /*----------------------------------------------
-    END RESPONSIVE
-        nav
+    END nav
 ----------------------------------------------*/
 
 
+
+
+/*----------------------------------------------
+    START catchyTitleANDcatchyImgContainer
+----------------------------------------------*/
 .catchyTitleANDcatchyImgContainer {
     position: relative;
-    /*text-align: center;*/
     text-align: end;
-   /*z-index: -1;*/
-   margin-top: 70px;
 }
 
 .catchyTitle {
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 35%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .catchyTitle h1 {
-    color: #D41D6D;
-    font-size: 6em;
+    color: #29F717;
+    font-size: 96px;
 }
 
 .catchyTitle h2 {
-    color: #CE6892;
-    font-size: 4em;
+    color: #70e000;
+    font-size: 64px;
 }
 
 .catchyTitle h3 {
-    color: #FFD9EE;
-    font-size: 2.5em;
+    color: #2bee58;
+    font-size: 47px;
+}
+
+.catchyTitle h4 {
+    color: #80ED99;
+    font-size: 25px;
 }
 
 .catchyImg {
-    position: relative;
-    transform: translate(-18%, -5%);
-    margin-top: 90px;
+    display: flex;
+    height: 580px;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateX(-200px);
 }
+
 .catchyImg img {
-    /*mix-blend-mode: darken;*/
-    /*z-index: -1;*/
-    filter: drop-shadow(3px 6px 9px #636161);
-    transform: translateX(0px);
+    height: 450px;
     animation: float 6s ease-out infinite;
+    opacity: 0.7;
 }
 
 @keyframes float {
@@ -270,45 +296,231 @@ a {
         transform: translateY(0px);
     }
 }
+/*--------------------------  START REPONSIVE  catchyTitleANDcatchyImgContainer  --------------------------*/
+@media (max-width: 1495px) {
+    .catchyImg {
+        transform: translateX(-180px);
+    }
+}
 
-.discoverOurFlavors {
+@media (max-width: 1440px) {
+    .catchyImg {
+        transform: translateX(-145px);
+    }
+}
+
+@media (max-width: 1360px) {
+    .catchyTitleANDcatchyImgContainer {
+        text-align: start;
+        margin-left: 21px;
+    }
+    .catchyImg {
+        transform: translateX(-80px);
+    }
+}
+
+@media (max-width: 1265px) {
+    .catchyTitle h1 {
+        font-size: 59px;
+        width: max-content;
+    }
+    .catchyTitle h2 {
+        font-size: 49px;
+    }
+    .catchyTitle h3 {
+        font-size: 27px;
+        margin-bottom: 39px;
+    }
+    .catchyTitle h4 {
+        font-size: 27px;
+    }
+    .catchyImg img {
+        height: 75%;
+    }
+}
+
+@media (max-width: 1140px) {
+    .catchyTitleANDcatchyImgContainer {
+        text-align: start;
+        margin-left: 21px;
+    }
+    .catchyImg img {
+        height: 65%;
+    }
+}
+
+@media (max-width: 969px) {
+    .catchyImg {
+        transform: translateX(-10px);
+    }
+}
+
+@media (max-width: 830px) {
+    .catchyTitle {
+    top: 55%;
+    left: 50%;
+    }
+    .catchyTitle h1 {
+    font-size: 50px;
+    width: max-content;
+    }
+    .catchyTitle h2 {
+    font-size: 40px;
+    }
+    .catchyTitle h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    }
+    .catchyTitle h4 {
+    font-size: 23px;
+    }
+    .catchyImg {
+    justify-content: center;
+    transform: translateX(-1px);
+    transform: translateY(-120px);
+    }
+    .catchyImg img {
+    height: 200px;
+    animation: float 6s ease-out infinite;
+    opacity: 0.7;
+    }
+}
+
+@media (max-width: 501px) {
+    .catchyTitleANDcatchyImgContainer {
+        text-align: start;
+        margin-left: 21px;
+    }
+    .catchyTitle {
+        top: 55%;
+        left: 50%;
+    }
+    .catchyTitle h1 {
+        font-size: 45px;
+        width: max-content;
+    }
+    .catchyTitle h2 {
+        font-size: 35px;
+    }
+    .catchyTitle h3 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+    .catchyTitle h4 {
+        font-size: 18px;
+    }
+    .catchyImg {
+        justify-content: center;
+        transform: translateX(-1px);
+        transform: translateY(-120px);
+    }
+    .catchyImg img {
+        height: 200px;
+        animation: float 6s ease-out infinite;
+        opacity: 0.7;
+    }
+}
+/*--------------------------  END REPONSIVE  catchyTitleANDcatchyImgContainer  --------------------------*/
+/*----------------------------------------------
+    END catchyTitleANDcatchyImgContainer
+----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------
+    START learnMoreORplayTheGame
+----------------------------------------------*/
+.learnMoreORplayTheGame {
     display: flex;
     justify-content: center;
 }
 
-.discoverOurFlavors a {
-    color: #FFF9EE;
+.playTheGame a {
+    color: #fff;
     font-size: medium;
-    background-color: #D41D6D;
+    background-color: #0000FF;
     padding: 12px 25px 12px 25px;
-    border: none;
+    border: 1px solid #0000FF;
     border-radius: 8px 18px;
     cursor: pointer;
+    margin-right: 15px;
 }
 
-.discoverOurFlavors a:hover {
+.playTheGame a:hover {
     transform: translateX(0px);
     transform: translateY(-0.25em);
-    box-shadow: 3px 3px 5px #636161;
+    box-shadow: 3px 3px 5px #D0D0D0;
 }
 
-.goDownIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 51px;
+.learnMore a {
+    color: #fff;
+    font-size: medium;
+    background-color: #000;
+    padding: 12px 25px 12px 25px;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px 18px;
+    cursor: pointer;
+    margin-left: 15px;
 }
 
+.learnMore a:hover {
+    background-color: #0000FF;
+    border: 1px solid #0000FF;
+    transform: translateX(0px);
+    transform: translateY(-0.25em);
+    box-shadow: 3px 3px 5px #D0D0D0;
+}
+/*--------------------------  START REPONSIVE  learnMoreORplayTheGame  --------------------------*/
+@media (max-width: 1001px) {
+    .learnMore a, .playTheGame a {
+        padding: 9px 22px 9px 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    .learnMore a, .playTheGame a {
+        padding: 5px 15px 5px 15px;
+    }
+}
+/*--------------------------  END REPONSIVE  learnMoreORplayTheGame  --------------------------*/
+/*----------------------------------------------
+    END learnMoreORplayTheGame
+----------------------------------------------*/
+
+
+
+
+/*----------------------------------------------
+    START footer
+----------------------------------------------*/
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 4px;
-    margin-top: 50px;
+    position: sticky;
+    margin-top: 65px;
 }
 
  footer p {
+    font-size: 18px;
     padding: 18px;
     color: #D0D0D0;
     font-family: 'Roboto';
- }
+}
+/*--------------------------  START REPONSIVE  footer  --------------------------*/
+@media (max-width: 1001px) {
+    footer p {
+        font-size: 92%;
+    }
+}
+
+@media (max-width: 550px) {
+    footer p {
+        font-size: 82%;
+    }
+}
+/*--------------------------  END REPONSIVE  footer  --------------------------*/
+/*----------------------------------------------
+    END footer
+----------------------------------------------*/
