@@ -324,14 +324,6 @@ a {
     font-style: italic;
     font-family: 'Roboto';
 }
-
-.positiveKeyWords {
-    color: #29F717;
-}
-
-.negativeKeyWords {
-    color: #EE0808;
-}
 /*--------------------------  START REPONSIVE  lastContainer  --------------------------*/
 @media (max-width: 1410px) {
     .lastContainer {
@@ -398,6 +390,7 @@ a {
     border-radius: 8px 18px;
     cursor: pointer;
     margin-right: 15px;
+    font-family: 'Roboto';
 }
 
 .playTheGame a:hover {
