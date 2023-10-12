@@ -241,10 +241,15 @@ a {
     width: 78%;
     margin-bottom: 15px;
     font-family: "Poppins", sans-serif;
+    margin-left: 20px;
 }
 
-.keyWords {
+.positiveKeyWords {
     color: #29F717;
+}
+
+.negativeKeyWords {
+    color: #EE0808;
 }
 /*----------------------------------------------
     START RESPONSIVE
@@ -270,7 +275,7 @@ a {
 
 @media (max-width: 1049px) {
     .textContainer {
-        width: 90%;
+        width: 85%;
     }
     .goDownIcon {
         opacity: 0;
@@ -365,6 +370,14 @@ a {
     margin-bottom: 10px;
 }
 
+.membersCard:hover h3 {
+    transition: 0.31 ease-in-out;
+    color: #000;
+    text-shadow: -1px -1px 0 #29F717, 1px -1px 0 #29F717, -1px 1px 0 #29F717, 1px 1px 0 #29F717;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
 .membersCard h4 {
     margin-top: 15px;
     margin-bottom: 20px;
@@ -372,7 +385,7 @@ a {
     font-family: "Poppins", sans-serif;
 }
 
-.membersCard h4:hover {
+.membersCard:hover h4 {
     color: #fff;
 }
 
@@ -443,8 +456,8 @@ a {
     .membersCard img {
         transform: scaleX(85%);
     }
-    .membersCard h3, .membersCard h4, .membersCard p {
-        font-size: 80%;
+    .membersCard h4, .membersCard p {
+        font-size: 85%;
     }
 }
 /*----------------------------------------------
